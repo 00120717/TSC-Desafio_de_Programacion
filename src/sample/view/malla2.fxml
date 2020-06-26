@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="600.0" styleClass="malla2bg" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MallaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="43.0" prefHeight="82.0" prefWidth="331.0" text="Controles" textAlignment="CENTER">
+         <font>
+            <Font name="Bowlby One SC Regular" size="50.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#40db2c" />
+                  <Stop color="#00feff" offset="0.9961685823754789" />
+                  <Stop color="#00feff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="159.0" prefHeight="41.0" prefWidth="114.0" text="Girar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="163.0" prefHeight="41.0" prefWidth="245.0" text="Acercar/Alejar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgAWSD" fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgMouse" fitHeight="150.0" fitWidth="163.0" layoutX="385.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_show_malla" layoutX="204.0" layoutY="452.0" mnemonicParsing="false" onAction="#mostrarMallaHandlerButton" prefHeight="82.0" prefWidth="192.0" styleClass="btns_green" stylesheets="@tableStyle.css" text="Ir a la Malla">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

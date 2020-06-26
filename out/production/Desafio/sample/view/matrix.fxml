@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MatrixController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Matrices">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="142.0" layoutY="35.0" prefHeight="56.0" prefWidth="349.0" text="Definicion de los ">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="33.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="m1" fitHeight="107.0" fitWidth="187.0" layoutX="80.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="37.0" layoutY="91.0" prefHeight="56.0" prefWidth="529.0" text="componentes de las matrices">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="31.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="229.0" layoutY="184.0" text="Matrices">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="RED" />
+                                          <Stop color="#ffea00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="m3" fitHeight="115.0" fitWidth="180.0" layoutX="212.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="m2" fitHeight="108.0" fitWidth="180.0" layoutX="345.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+            <Tab text="Matriz C ">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2500.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="96.0" layoutY="36.0" prefHeight="56.0" prefWidth="412.0" text="Resolviendo matriz c">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="33.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mc1" fitHeight="239.0" fitWidth="529.0" layoutX="34.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mc2" fitHeight="160.0" fitWidth="335.0" layoutX="131.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="menores" fitHeight="419.0" fitWidth="411.0" layoutX="123.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="220.0" layoutY="447.0" text="Menores">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="RED" />
+                                          <Stop color="#dfff00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="86.0" layoutY="1010.0" text="Matriz conjunta y adjunta">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#fff600" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mconjyadj" fitHeight="124.0" fitWidth="450.0" layoutX="76.0" layoutY="1084.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mc3" fitHeight="150.0" fitWidth="550.0" layoutX="27.0" layoutY="1193.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mc4" fitHeight="150.0" fitWidth="535.0" layoutX="36.0" layoutY="1331.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="48.0" layoutY="1520.0" prefHeight="50.0" prefWidth="526.0" text="Aplicando W=[N^T N^T N^T]">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffe200" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mc5" fitHeight="179.0" fitWidth="505.0" layoutX="50.0" layoutY="1611.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mc6" fitHeight="179.0" fitWidth="505.0" layoutX="50.0" layoutY="1814.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mT" fitHeight="397.0" fitWidth="494.0" layoutX="50.0" layoutY="1969.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="224.0" layoutY="2263.0" text="Matriz C">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="C" fitHeight="150.0" fitWidth="200.0" layoutX="197.0" layoutY="2313.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Matriz K">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="96.0" layoutY="36.0" prefHeight="56.0" prefWidth="412.0" text="Resolviendo matriz K">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="33.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mk1" fitHeight="239.0" fitWidth="498.0" layoutX="83.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="menores1" fitHeight="419.0" fitWidth="411.0" layoutX="106.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="226.0" layoutY="383.0" text="Menores">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="RED" />
+                                          <Stop color="#dfff00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="87.0" layoutY="910.0" text="Matriz conjunta y adjunta">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#fff600" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mconjyadj1" fitHeight="119.0" fitWidth="467.0" layoutX="87.0" layoutY="987.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="241.0" layoutY="1241.0" text="Matriz K">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mk2" fitHeight="198.0" fitWidth="458.0" layoutX="83.0" layoutY="1093.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="K" fitHeight="150.0" fitWidth="200.0" layoutX="221.0" layoutY="1318.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Matriz J">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="96.0" layoutY="36.0" prefHeight="56.0" prefWidth="412.0" text="Resolviendo matriz J">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="33.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mj1" fitHeight="239.0" fitWidth="498.0" layoutX="83.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="menoresj" fitHeight="419.0" fitWidth="411.0" layoutX="106.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="226.0" layoutY="383.0" text="Menores">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="RED" />
+                                          <Stop color="#dfff00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="87.0" layoutY="910.0" text="Matriz conjunta y adjunta">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#fff600" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="adjuntaj" fitHeight="119.0" fitWidth="467.0" layoutX="87.0" layoutY="987.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="252.0" layoutY="1251.0" text="Matriz J">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mj2" fitHeight="198.0" fitWidth="458.0" layoutX="83.0" layoutY="1093.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="J" fitHeight="150.0" fitWidth="200.0" layoutX="221.0" layoutY="1318.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Matriz F ">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1300.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="96.0" layoutY="36.0" prefHeight="56.0" prefWidth="412.0" text="Resolviendo matriz F">
+                                 <font>
+                                    <Font name="Bowlby One SC Regular" size="33.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mf1" fitHeight="289.0" fitWidth="559.0" layoutX="14.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="46.0" layoutY="359.0" prefHeight="50.0" prefWidth="526.0" text="Aplicando W=[N^T N^T N^T]">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffe200" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="225.0" layoutY="997.0" text="Matriz F">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mf2" fitHeight="289.0" fitWidth="530.0" layoutX="44.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="mf3" fitHeight="289.0" fitWidth="530.0" layoutX="44.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="F" fitHeight="150.0" fitWidth="200.0" layoutX="202.0" layoutY="1093.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Matriz g ">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1800.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="76.0" layoutY="36.0" prefHeight="56.0" prefWidth="466.0" text="RESOLVIENDO MATRIZ g">
+                                 <font>
+                                    <Font name="Arial Black" size="32.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mg1" fitHeight="270.0" fitWidth="457.0" layoutX="73.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="231.0" layoutY="1478.0" text="Matriz g">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="g" fitHeight="150.0" fitWidth="200.0" layoutX="196.0" layoutY="1546.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="66.0" layoutY="384.0" text="Resolviendo primera integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mg2" fitHeight="243.0" fitWidth="476.0" layoutX="58.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="54.0" layoutY="700.0" text="Resolviendo segunda integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mg3" fitHeight="238.0" fitWidth="476.0" layoutX="64.0" layoutY="762.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="59.0" layoutY="1017.0" text="Resolviendo tercera integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mg4" fitHeight="126.0" fitWidth="459.0" layoutX="81.0" layoutY="1083.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="65.0" layoutY="1245.0" text="Resolviendo cuarta integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mg5" fitHeight="135.0" fitWidth="459.0" layoutX="91.0" layoutY="1324.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Matriz g ">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1800.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="76.0" layoutY="36.0" prefHeight="56.0" prefWidth="466.0" text="RESOLVIENDO MATRIZ h">
+                                 <font>
+                                    <Font name="Arial Black" size="32.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mh1" fitHeight="270.0" fitWidth="457.0" layoutX="73.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="231.0" layoutY="1478.0" text="Matriz h">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="h" fitHeight="150.0" fitWidth="200.0" layoutX="196.0" layoutY="1546.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="66.0" layoutY="384.0" text="Resolviendo primera integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mh2" fitHeight="243.0" fitWidth="476.0" layoutX="58.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="54.0" layoutY="700.0" text="Resolviendo segunda integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mh3" fitHeight="238.0" fitWidth="476.0" layoutX="64.0" layoutY="762.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="59.0" layoutY="1017.0" text="Resolviendo tercera integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mh4" fitHeight="126.0" fitWidth="459.0" layoutX="81.0" layoutY="1083.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="65.0" layoutY="1245.0" text="Resolviendo cuarta integral">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="34.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0021" />
+                                          <Stop color="#ffee00" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="mh5" fitHeight="135.0" fitWidth="459.0" layoutX="91.0" layoutY="1324.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Dimensiones">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="603.0" styleClass="matrixbg" stylesheets="@tableStyle.css">
+                           <children>
+                              <Label layoutX="91.0" layoutY="27.0" prefHeight="56.0" prefWidth="466.0" text="Dimensiones matriciales">
+                                 <font>
+                                    <Font name="Arial Black" size="32.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <Label layoutX="180.0" layoutY="306.0" prefHeight="56.0" prefWidth="289.0" text="Sistema Local">
+                                 <font>
+                                    <Font name="Arial Black" size="32.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#faff00" />
+                                          <Stop color="#ffb900" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <ImageView fx:id="dimens" fitHeight="204.0" fitWidth="489.0" layoutX="57.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="slocal" fitHeight="150.0" fitWidth="311.0" layoutX="146.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

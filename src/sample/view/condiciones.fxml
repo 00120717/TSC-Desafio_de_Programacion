@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="600.0" styleClass="condicionbg" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CondicionesController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="23.0" prefHeight="57.0" prefWidth="514.0" text="Condiciones de contorno">
+         <font>
+            <Font name="Bowlby One SC Regular" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="imgVCondicion" fitHeight="199.0" fitWidth="315.0" layoutX="150.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="269.0" prefHeight="57.0" prefWidth="514.0" text="Se aplican en los nodos:">
+         <font>
+            <Font name="Bowlby One SC Regular" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#fffffffd" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="imgVCondicion1" fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgVCondicion2" fitHeight="150.0" fitWidth="200.0" layoutX="339.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_cerrar" layoutX="248.0" layoutY="495.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="50.0" prefWidth="104.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="600.0" styleClass="controlesbg" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DominioController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="30.0" prefHeight="43.0" prefWidth="529.0" text="Controles para mover dominio" textAlignment="CENTER">
+         <font>
+            <Font name="Bowlby One SC Regular" size="29.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#de2626" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="130.0" prefHeight="41.0" prefWidth="114.0" text="Girar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="298.0" layoutY="134.0" prefHeight="41.0" prefWidth="245.0" text="Acercar/Alejar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgAWSD" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgMouse" fitHeight="150.0" fitWidth="163.0" layoutX="380.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_show_domain" layoutX="216.0" layoutY="429.0" mnemonicParsing="false" onAction="#mostrarDominioHandlerButton" prefHeight="65.0" prefWidth="171.0" styleClass="btns" stylesheets="@tableStyle.css" text="Ir al dominio">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
