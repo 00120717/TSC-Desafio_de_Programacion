@@ -60,6 +60,8 @@ public class Controller{
         }catch (Exception e){
             System.out.println("No se pudo abrir el FXML");
         }
+        Stage stage = (Stage) btn_mef.getScene().getWindow();
+        stage.close();
     }
     @FXML   /*+++++++++++ Tabla de conectividades +++++++++++*/
     void tableHandlerButton(ActionEvent event){
@@ -124,6 +126,8 @@ public class Controller{
         }catch (Exception e){
             System.out.println("No se pudo abrir el FXML");
         }
+        Stage stage = (Stage) btn_ensambly.getScene().getWindow();
+        stage.close();
     }
     @FXML   /*+++++++++++ Pantalla Malla +++++++++++*/
     void mallaHandlerButton(ActionEvent event){
@@ -154,6 +158,8 @@ public class Controller{
         }catch (Exception e){
             System.out.println("No se pudo abrir Modelo");
         }
+        Stage stage = (Stage) btn_matrix.getScene().getWindow();
+        stage.close();
     }
     @FXML
     public void cerrarVentana(ActionEvent event){

@@ -1,26 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="575.0" prefWidth="600.0" styleClass="ensamblajebg" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="136.0" layoutY="28.0" text="Ensamblaje">
-         <font>
-            <Font name="Bowlby One SC Regular" size="48.0" />
-         </font>
-         <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#b4ffa1" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-   </children>
-</AnchorPane>
+<ScrollPane prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EnsamblajeController">
+   <content>
+      <AnchorPane prefHeight="1674.0" prefWidth="600.0" styleClass="ensamblajebg" stylesheets="@tableStyle.css">
+         <children>
+            <Label layoutX="136.0" layoutY="14.0" text="Ensamblaje">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="48.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b4ffa1" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgtable" fitHeight="268.0" fitWidth="506.0" layoutX="59.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="117.0" prefHeight="41.0" prefWidth="502.0" text="Se procede elemento por elemento">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="670.0" prefHeight="41.0" prefWidth="502.0" text="Se prepara la matriz global">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgglobal" fitHeight="288.0" fitWidth="534.0" layoutX="45.0" layoutY="711.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="1033.0" prefHeight="41.0" prefWidth="502.0" text="Se comienza a colocar ">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="426.0" prefHeight="41.0" prefWidth="502.0" text="Elemento 1">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgelto1" fitHeight="189.0" fitWidth="386.0" layoutX="119.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="1062.0" prefHeight="41.0" prefWidth="557.0" text="los componentes en la matriz global">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="1089.0" prefHeight="41.0" prefWidth="502.0" text="segun sus indices">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgensamblaje" fitHeight="288.0" fitWidth="534.0" layoutX="45.0" layoutY="1130.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btn_cerrar" layoutX="259.0" layoutY="1589.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="49.0" prefWidth="107.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="1440.0" prefHeight="41.0" prefWidth="502.0" text="El proceso se repite con los ">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="1474.0" prefHeight="41.0" prefWidth="502.0" text="demas elementos ">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="25.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#ceff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

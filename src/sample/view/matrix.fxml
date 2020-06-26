@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Tab?>
@@ -11,7 +12,6 @@
 <?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MatrixController">
    <center>
@@ -562,7 +562,7 @@
                                     </RadialGradient>
                                  </textFill>
                               </Label>
-                              <Label layoutX="180.0" layoutY="306.0" prefHeight="56.0" prefWidth="289.0" text="Sistema Local">
+                              <Label layoutX="180.0" layoutY="290.0" prefHeight="56.0" prefWidth="289.0" text="Sistema Local">
                                  <font>
                                     <Font name="Arial Black" size="32.0" />
                                  </font>
@@ -575,8 +575,13 @@
                                     </RadialGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="dimens" fitHeight="204.0" fitWidth="489.0" layoutX="57.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fx:id="slocal" fitHeight="150.0" fitWidth="311.0" layoutX="146.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="dimens" fitHeight="200.0" fitWidth="516.0" layoutX="44.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="slocal" fitHeight="150.0" fitWidth="311.0" layoutX="147.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btn_cerrar" layoutX="248.0" layoutY="503.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="49.0" prefWidth="107.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </AnchorPane>
                      </content>
