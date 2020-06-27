@@ -2,47 +2,175 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="575.0" prefWidth="600.0" styleClass="condicionbg" stylesheets="@tableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CondicionesController">
-   <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="23.0" prefHeight="57.0" prefWidth="514.0" text="Condiciones de contorno">
-         <font>
-            <Font name="Bowlby One SC Regular" size="35.0" />
-         </font>
-         <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="WHITE" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="imgVCondicion" fitHeight="199.0" fitWidth="315.0" layoutX="150.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="269.0" prefHeight="57.0" prefWidth="514.0" text="Se aplican en los nodos:">
-         <font>
-            <Font name="Bowlby One SC Regular" size="35.0" />
-         </font>
-         <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="WHITE" />
-                  <Stop color="#fffffffd" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </textFill>
-      </Label>
-      <ImageView fx:id="imgVCondicion1" fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="imgVCondicion2" fitHeight="150.0" fitWidth="200.0" layoutX="339.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="btn_cerrar" layoutX="248.0" layoutY="495.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="50.0" prefWidth="104.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-   </children>
-</AnchorPane>
+
+<ScrollPane prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CondicionesController">
+   <content>
+      <AnchorPane prefHeight="1867.0" prefWidth="600.0" styleClass="condicionbg" stylesheets="@tableStyle.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="23.0" prefHeight="57.0" prefWidth="514.0" text="Condiciones de contorno">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="35.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgVCondicion" fitHeight="199.0" fitWidth="315.0" layoutX="150.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="269.0" prefHeight="57.0" prefWidth="514.0" text="Se aplican en los nodos:">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="35.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fffffffd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="imgVCondicion1" fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgVCondicion2" fitHeight="150.0" fitWidth="200.0" layoutX="339.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btn_cerrar" layoutX="235.0" layoutY="1786.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="50.0" prefWidth="104.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="514.0" prefHeight="57.0" prefWidth="547.0" text="quedando los respectivos vectores asi:">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff01" />
+                        <Stop color="#ff0a0afc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="571.0" prefHeight="57.0" prefWidth="133.0" text="Neumann">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ff0000fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="373.0" layoutY="571.0" prefHeight="57.0" prefWidth="133.0" text="dirichlet">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ff0000fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="neu" fitHeight="346.0" fitWidth="116.0" layoutX="112.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="dirich" fitHeight="346.0" fitWidth="116.0" layoutX="390.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="972.0" prefHeight="57.0" prefWidth="547.0" text="eliminando filas y columnas ">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fffffffd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="1000.0" prefHeight="57.0" prefWidth="547.0" text="donde se aplica dirichlet">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#fffffffd" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="condicion" fitHeight="260.0" fitWidth="511.0" layoutX="48.0" layoutY="1050.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="1335.0" prefHeight="57.0" prefWidth="547.0" text="luego pasando al lado derecho con">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff9412" />
+                        <Stop color="#ff0000fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="1364.0" prefHeight="57.0" prefWidth="547.0" text="con signo negativo el valor de dirichlet">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff1c1c" />
+                        <Stop color="#ff8f07" offset="0.8865979381443299" />
+                        <Stop color="#ff0d0dfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="1393.0" prefHeight="57.0" prefWidth="547.0" text="para finalmente recortar el sistema">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffae0b" />
+                        <Stop color="#ff0000fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="1422.0" prefHeight="57.0" prefWidth="547.0" text="y obtener una matriz m de 31x31">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#fc0000" />
+                        <Stop color="#ff8800fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="condFinal" fitHeight="270.0" fitWidth="502.0" layoutX="50.0" layoutY="1479.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

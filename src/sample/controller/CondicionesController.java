@@ -22,6 +22,14 @@ public class CondicionesController implements Initializable {
     @FXML
     ImageView imgVCondicion2;
     @FXML
+    ImageView neu;
+    @FXML
+    ImageView dirich;
+    @FXML
+    ImageView condicion;
+    @FXML
+    ImageView condFinal;
+    @FXML
     Button btn_cerrar;
     @FXML
     public void cerrarVentana(ActionEvent event){
@@ -48,5 +56,13 @@ public class CondicionesController implements Initializable {
         imgVCondicion1.setImage(image1);
         Image image2 = new Image(getClass().getResourceAsStream("../images/neu.png"));
         imgVCondicion2.setImage(image2);
+        Image image3 = new Image(getClass().getResourceAsStream("../images/neumannCondition.png"));
+        neu.setImage(image3);
+        Image image4 = new Image(getClass().getResourceAsStream("../images/dirichletCondicion.png"));
+        dirich.setImage(image4);
+        Image image5 = new Image(getClass().getResourceAsStream("../images/condicion.gif"));
+        condicion.setImage(image5);
+        Image image6 = new Image(getClass().getResourceAsStream("../images/final.gif"));
+        condFinal.setImage(image6);
     }
 }
