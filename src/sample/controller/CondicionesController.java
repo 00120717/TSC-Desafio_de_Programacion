@@ -30,6 +30,8 @@ public class CondicionesController implements Initializable {
     @FXML
     ImageView condFinal;
     @FXML
+    ImageView scroll;
+    @FXML
     Button btn_cerrar;
     @FXML
     public void cerrarVentana(ActionEvent event){
@@ -50,19 +52,21 @@ public class CondicionesController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image = new Image(getClass().getResourceAsStream("../images/Captura.png"));
+        Image image = new Image(getClass().getResourceAsStream("../images/Captura.jpg"));
         imgVCondicion.setImage(image);
-        Image image1 = new Image(getClass().getResourceAsStream("../images/dirich.png"));
+        Image image1 = new Image(getClass().getResourceAsStream("../images/dirich.jpg"));
         imgVCondicion1.setImage(image1);
-        Image image2 = new Image(getClass().getResourceAsStream("../images/neu.png"));
+        Image image2 = new Image(getClass().getResourceAsStream("../images/neu.jpg"));
         imgVCondicion2.setImage(image2);
-        Image image3 = new Image(getClass().getResourceAsStream("../images/neumannCondition.png"));
+        Image image3 = new Image(getClass().getResourceAsStream("../images/neumannCondition.jpg"));
         neu.setImage(image3);
-        Image image4 = new Image(getClass().getResourceAsStream("../images/dirichletCondicion.png"));
+        Image image4 = new Image(getClass().getResourceAsStream("../images/dirichletCondicion.jpg"));
         dirich.setImage(image4);
-        Image image5 = new Image(getClass().getResourceAsStream("../images/ensamblaje/4.gif"));
+        Image image5 = new Image(getClass().getResourceAsStream("../images/ensamblaje/3.gif"));
         condicion.setImage(image5);
         Image image6 = new Image(getClass().getResourceAsStream("../images/ensamblaje/5.gif"));
         condFinal.setImage(image6);
+        Image images = new Image(getClass().getResourceAsStream("../images/scroll.jpg"));
+        scroll.setImage(images);
     }
 }

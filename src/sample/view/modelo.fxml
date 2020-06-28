@@ -30,7 +30,7 @@
       </Label>
       <ImageView fx:id="imageView" fitHeight="185.0" fitWidth="374.0" layoutX="121.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/modelo.png" />
+            <Image url="@../images/modelo.jpg" />
          </image>
       </ImageView>
       <Button fx:id="btn_cerrar" layoutX="224.0" layoutY="435.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="67.0" prefWidth="153.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">

@@ -129,10 +129,10 @@ public class MallaController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Image imageAWSD = new Image(getClass().getResourceAsStream("../images/awsd.png"));
+        Image imageAWSD = new Image(getClass().getResourceAsStream("../images/awsd.jpg"));
         imgAWSD.setImage(imageAWSD);
 
-        Image imageMouse = new Image(getClass().getResourceAsStream("../images/mouse.png"));
+        Image imageMouse = new Image(getClass().getResourceAsStream("../images/mouse.jpg"));
         imgMouse.setImage(imageMouse);
     }
 }

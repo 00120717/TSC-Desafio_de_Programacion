@@ -24,6 +24,8 @@ public class EnsamblajeController implements Initializable {
     @FXML
     ImageView imgensamblaje;
     @FXML
+    ImageView scroll;
+    @FXML
     Button btn_cerrar;
     @FXML
     public void cerrarVentana(ActionEvent event){
@@ -47,11 +49,13 @@ public class EnsamblajeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Image image1 = new Image(getClass().getResourceAsStream("../images/ensamblaje/1.gif"));
         imgtable.setImage(image1);
-        Image image2 = new Image(getClass().getResourceAsStream("../images/ensamblaje/elemento1.PNG"));
+        Image image2 = new Image(getClass().getResourceAsStream("../images/ensamblaje/elemento1.jpg"));
         imgelto1.setImage(image2);
         Image image3 = new Image(getClass().getResourceAsStream("../images/ensamblaje/2.gif"));
         imgglobal.setImage(image3);
-        Image image4 = new Image(getClass().getResourceAsStream("../images/ensamblaje/3.gif"));
+        Image image4 = new Image(getClass().getResourceAsStream("../images/ensamblaje/4.gif"));
         imgensamblaje.setImage(image4);
+        Image images = new Image(getClass().getResourceAsStream("../images/scroll.jpg"));
+        scroll.setImage(images);
     }
 }

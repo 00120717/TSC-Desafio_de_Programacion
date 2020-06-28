@@ -49,7 +49,7 @@ public class ModeloController implements Initializable {
     }
     @Override
     public void initialize(URL url , ResourceBundle resourceBundle) {
-        Image image = new Image(getClass().getResourceAsStream("../images/modelo.png"));
+        Image image = new Image(getClass().getResourceAsStream("../images/modelo.jpg"));
         imageView.setImage(image);
     }
 }

@@ -181,6 +181,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
+            <ImageView fx:id="scroll" fitHeight="92.0" fitWidth="92.0" layoutX="487.0" layoutY="1758.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
    </content>
