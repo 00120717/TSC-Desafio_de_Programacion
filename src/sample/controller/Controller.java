@@ -144,7 +144,7 @@ public class Controller{
             System.out.println("No se pudo abrir el FXML");
         }
     }
-    @FXML   /*+++++++++++ Modelo +++++++++++*/
+    @FXML   /*+++++++++++ Componentes matriciales +++++++++++*/
     void matrixHandlerButton(ActionEvent event){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/matrix.fxml"));
@@ -152,7 +152,7 @@ public class Controller{
 
             Stage stage = new Stage();
             stage.setResizable(false);
-            stage.setTitle("Modelo");
+            stage.setTitle("Componentes");
             stage.setScene(new Scene(root));
             stage.show();
         }catch (Exception e){

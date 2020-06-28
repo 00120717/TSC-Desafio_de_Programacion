@@ -64,7 +64,6 @@
                                  </textFill>
                               </Label>
                               <ImageView fx:id="imgP1_1" fitHeight="252.0" fitWidth="295.0" layoutX="169.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fx:id="imgP1_2" fitHeight="150.0" fitWidth="284.0" layoutX="178.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -90,8 +89,8 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="imgP2_A" fitHeight="111.0" fitWidth="433.0" layoutX="91.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label layoutX="174.0" layoutY="97.0" text="Interpolando A">
+                              <ImageView fx:id="imgP2_A" fitHeight="229.0" fitWidth="433.0" layoutX="87.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="150.0" layoutY="97.0" text="Interpolando A y B">
                                  <font>
                                     <Font name="Segoe UI Black" size="34.0" />
                                  </font>
@@ -104,20 +103,6 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <Label layoutX="172.0" layoutY="290.0" text="Interpolando B">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="34.0" />
-                                 </font>
-                                 <textFill>
-                                    <LinearGradient endX="1.0" endY="1.0">
-                                       <stops>
-                                          <Stop color="#ff0021" />
-                                          <Stop color="BLACK" offset="1.0" />
-                                       </stops>
-                                    </LinearGradient>
-                                 </textFill>
-                              </Label>
-                              <ImageView fx:id="imgP2_B" fitHeight="111.0" fitWidth="433.0" layoutX="91.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -130,7 +115,7 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="600.0" styleClass="step1bg" stylesheets="@tableStyle.css">
                            <children>
-                              <ImageView fx:id="imgP3_1" fitHeight="145.0" fitWidth="342.0" layoutX="129.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgP3_1" fitHeight="220.0" fitWidth="389.0" layoutX="113.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
                               <Label layoutX="103.0" layoutY="25.0" prefHeight="83.0" prefWidth="446.0" text="PASO 3. Residuales">
                                  <font>
                                     <Font name="Bowlby One SC Regular" size="38.0" />
@@ -157,7 +142,7 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <Label layoutX="181.0" layoutY="325.0" text="Sacando residuales">
+                              <Label layoutX="169.0" layoutY="147.0" text="y Sacando residuales">
                                  <font>
                                     <Font name="Segoe UI Black" size="27.0" />
                                  </font>
@@ -170,7 +155,6 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="imgP3_2" fitHeight="145.0" fitWidth="342.0" layoutX="136.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -181,9 +165,9 @@
                <content>
                   <ScrollPane prefHeight="200.0" prefWidth="200.0">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="642.0" prefWidth="609.0" styleClass="step1bg" stylesheets="@tableStyle.css">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="575.0" prefWidth="609.0" styleClass="step1bg" stylesheets="@tableStyle.css">
                            <children>
-                              <ImageView fx:id="imgP4_1" fitHeight="103.0" fitWidth="231.0" layoutX="189.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgP4_1" fitHeight="272.0" fitWidth="538.0" layoutX="31.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" />
                               <Label layoutX="158.0" layoutY="26.0" prefHeight="80.0" prefWidth="346.0" text="PASO 4. Pesos">
                                  <font>
                                     <Font name="Bowlby One SC Regular" size="38.0" />
@@ -197,7 +181,7 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <Label layoutX="255.0" layoutY="119.0" text="Peso W">
+                              <Label layoutX="244.0" layoutY="132.0" text="Pesos W">
                                  <font>
                                     <Font name="Segoe UI Black" size="27.0" />
                                  </font>
@@ -210,48 +194,6 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <Label layoutX="109.0" layoutY="278.0" text="Residuo 1">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="27.0" />
-                                 </font>
-                                 <textFill>
-                                    <LinearGradient endX="1.0" endY="1.0">
-                                       <stops>
-                                          <Stop color="#ff0021" />
-                                          <Stop color="BLACK" offset="1.0" />
-                                       </stops>
-                                    </LinearGradient>
-                                 </textFill>
-                              </Label>
-                              <Label layoutX="377.0" layoutY="278.0" text="Residuo 2">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="27.0" />
-                                 </font>
-                                 <textFill>
-                                    <LinearGradient endX="1.0" endY="1.0">
-                                       <stops>
-                                          <Stop color="#ff0021" />
-                                          <Stop color="BLACK" offset="1.0" />
-                                       </stops>
-                                    </LinearGradient>
-                                 </textFill>
-                              </Label>
-                              <ImageView fx:id="imgP4_2" fitHeight="103.0" fitWidth="231.0" layoutX="57.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fx:id="imgP4_3" fitHeight="103.0" fitWidth="231.0" layoutX="327.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label layoutX="226.0" layoutY="458.0" text="Sumando">
-                                 <font>
-                                    <Font name="Segoe UI Black" size="27.0" />
-                                 </font>
-                                 <textFill>
-                                    <LinearGradient endX="1.0" endY="1.0">
-                                       <stops>
-                                          <Stop color="#ff0021" />
-                                          <Stop color="BLACK" offset="1.0" />
-                                       </stops>
-                                    </LinearGradient>
-                                 </textFill>
-                              </Label>
-                              <ImageView fx:id="imgP4_4" fitHeight="103.0" fitWidth="231.0" layoutX="206.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -264,7 +206,7 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="687.0" prefWidth="600.0" styleClass="step1bg" stylesheets="@tableStyle.css">
                            <children>
-                              <ImageView fx:id="imgP5_1" fitHeight="70.0" fitWidth="164.0" layoutX="218.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgP5_1" fitHeight="458.0" fitWidth="520.0" layoutX="39.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
                               <Label layoutX="49.0" layoutY="9.0" prefHeight="80.0" prefWidth="545.0" text="PASO 5. Aplicando Galerkin">
                                  <font>
                                     <Font name="Bowlby One SC Regular" size="32.0" />
@@ -278,8 +220,7 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="imgP5_2" fitHeight="397.0" fitWidth="525.0" layoutX="37.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label layoutX="218.0" layoutY="513.0" text="Forma Fuerte">
+                              <Label layoutX="212.0" layoutY="110.0" text="Forma Fuerte">
                                  <font>
                                     <Font name="Segoe UI Black" size="27.0" />
                                  </font>
@@ -292,7 +233,6 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="imgP5_3" fitHeight="94.0" fitWidth="179.0" layoutX="229.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </AnchorPane>
                      </content>
@@ -359,8 +299,7 @@
                                     </LinearGradient>
                                  </textFill>
                               </Label>
-                              <ImageView fx:id="imgP6_3" fitHeight="196.0" fitWidth="531.0" layoutX="42.0" layoutY="972.0" pickOnBounds="true" preserveRatio="true" />
-                              <ImageView fx:id="imgP6_4" fitHeight="172.0" fitWidth="395.0" layoutX="120.0" layoutY="1149.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imgP6_3" fitHeight="296.0" fitWidth="531.0" layoutX="40.0" layoutY="1011.0" pickOnBounds="true" preserveRatio="true" />
                               <Button fx:id="btn_cerrar" layoutX="258.0" layoutY="1345.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="49.0" prefWidth="107.0" styleClass="btns" stylesheets="@tableStyle.css" text="Regresar">
                                  <font>
                                     <Font size="18.0" />

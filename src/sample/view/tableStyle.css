@@ -22,7 +22,7 @@
 }
 /*+++++++++++++BACKGROUND+++++++++++++++++*/
 .bodybg{
-    -fx-background-image:url('/sample/images/fondo-de-pantalla-fondo-azul-5.jpg');
+    -fx-background-image:url('/sample/images/fondoazul.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
@@ -67,7 +67,7 @@
     -fx-background-position: center center;
 }
 .matrixbg{
-    -fx-background-image:url('/sample/images/abstract-cube-digital-art-5k-hc.jpg');
+    -fx-background-image:url('/sample/images/abstractcube.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
