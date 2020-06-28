@@ -22,7 +22,7 @@ public class Malla2Controller implements Initializable{
     @FXML   /*+++++++++++ Pantalla Malla +++++++++++*/
     void malla2HandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/malla2.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/malla2.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);

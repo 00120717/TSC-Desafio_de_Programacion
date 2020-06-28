@@ -57,7 +57,7 @@ public class MefController implements Initializable {
     public void cerrarVentana(ActionEvent event){
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/main.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/main.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);

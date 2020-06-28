@@ -32,7 +32,7 @@ public class Controller{
     @FXML   /*+++++++++++ Modelo +++++++++++*/
     void modeloHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/modelo.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/modelo.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -50,7 +50,7 @@ public class Controller{
     @FXML   /*+++++++++++ MEF +++++++++++*/
     void mefHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/mef.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/mef.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -66,7 +66,7 @@ public class Controller{
     @FXML   /*+++++++++++ Tabla de conectividades +++++++++++*/
     void tableHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/tableConectivity.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/tableConectivity.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -83,7 +83,7 @@ public class Controller{
     @FXML   /*+++++++++++ Condiciones de Contorno +++++++++++*/
     void contornoHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/condiciones.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/condiciones.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -100,7 +100,7 @@ public class Controller{
     @FXML   /*+++++++++++ Pantalla indicaciones Dominio +++++++++++*/
     void dominioHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/dominio.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/dominio.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -115,7 +115,7 @@ public class Controller{
     @FXML   /*+++++++++++ Pantalla ensamblaje +++++++++++*/
     void assamblyHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/ensamblaje.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/ensamblaje.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -132,7 +132,7 @@ public class Controller{
     @FXML   /*+++++++++++ Pantalla Malla +++++++++++*/
     void mallaHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/malla.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/malla.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -147,7 +147,7 @@ public class Controller{
     @FXML   /*+++++++++++ Modelo +++++++++++*/
     void matrixHandlerButton(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/matrix.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/matrix.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();

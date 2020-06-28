@@ -34,7 +34,7 @@ public class CondicionesController implements Initializable {
     @FXML
     public void cerrarVentana(ActionEvent event){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/main.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/main.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -60,9 +60,9 @@ public class CondicionesController implements Initializable {
         neu.setImage(image3);
         Image image4 = new Image(getClass().getResourceAsStream("../images/dirichletCondicion.png"));
         dirich.setImage(image4);
-        Image image5 = new Image(getClass().getResourceAsStream("../images/condicion.gif"));
+        Image image5 = new Image(getClass().getResourceAsStream("../images/ensamblaje/4.gif"));
         condicion.setImage(image5);
-        Image image6 = new Image(getClass().getResourceAsStream("../images/final.gif"));
+        Image image6 = new Image(getClass().getResourceAsStream("../images/ensamblaje/5.gif"));
         condFinal.setImage(image6);
     }
 }

@@ -29,7 +29,7 @@ public class EnsamblajeController implements Initializable {
     public void cerrarVentana(ActionEvent event){
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/main.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/main.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
@@ -45,14 +45,13 @@ public class EnsamblajeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image1 = new Image(getClass().getResourceAsStream("../images/ensamblaje/tabla conectividad.gif"));
+        Image image1 = new Image(getClass().getResourceAsStream("../images/ensamblaje/1.gif"));
         imgtable.setImage(image1);
         Image image2 = new Image(getClass().getResourceAsStream("../images/ensamblaje/elemento1.PNG"));
         imgelto1.setImage(image2);
-        Image image3 = new Image(getClass().getResourceAsStream("../images/ensamblaje/global.gif"));
+        Image image3 = new Image(getClass().getResourceAsStream("../images/ensamblaje/2.gif"));
         imgglobal.setImage(image3);
-        Image image4 = new Image(getClass().getResourceAsStream("../images/ensamblaje/ensamblaje.gif"));
+        Image image4 = new Image(getClass().getResourceAsStream("../images/ensamblaje/3.gif"));
         imgensamblaje.setImage(image4);
-
     }
 }
