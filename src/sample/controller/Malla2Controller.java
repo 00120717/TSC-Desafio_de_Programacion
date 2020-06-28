@@ -39,7 +39,7 @@ public class Malla2Controller implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image malla = new Image(getClass().getResourceAsStream("../images/mef/malla.jpg"));
+        Image malla = new Image(getClass().getResourceAsStream("/sample/images/mef/malla.jpg"));
         imgMalla.setImage(malla);
     }
 }

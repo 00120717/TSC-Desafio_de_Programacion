@@ -104,7 +104,7 @@ public class MallaController implements Initializable {
     private Node prepareDomain() {
 
         PhongMaterial material = new PhongMaterial();
-        material.setDiffuseMap(new Image(getClass().getResourceAsStream("../images/lado1.jpg")));
+        material.setDiffuseMap(new Image(getClass().getResourceAsStream("/sample/images/lado1.jpg")));
         Box box =  new Box(100,20,50);
         box.setMaterial(material);
         box.setMaterial(material);
@@ -119,7 +119,7 @@ public class MallaController implements Initializable {
     }
 
     private ImageView prepareImageView(){
-        Image image = new Image(getClass().getResourceAsStream("../images/fondo_malla_poligonal.jpg"));
+        Image image = new Image(getClass().getResourceAsStream("/sample/images/fondo_malla_poligonal.jpg"));
         ImageView imageView = new ImageView(image);
         imageView.setPreserveRatio(true);
         imageView.getTransforms().add(new Translate(-image.getWidth()/5,-image.getHeight()/5,1800));
@@ -129,10 +129,10 @@ public class MallaController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Image imageAWSD = new Image(getClass().getResourceAsStream("../images/awsd.jpg"));
+        Image imageAWSD = new Image(getClass().getResourceAsStream("/sample/images/awsd.jpg"));
         imgAWSD.setImage(imageAWSD);
 
-        Image imageMouse = new Image(getClass().getResourceAsStream("../images/mouse.jpg"));
+        Image imageMouse = new Image(getClass().getResourceAsStream("/sample/images/mouse.jpg"));
         imgMouse.setImage(imageMouse);
     }
 }

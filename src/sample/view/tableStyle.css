@@ -22,7 +22,7 @@
 }
 /*+++++++++++++BACKGROUND+++++++++++++++++*/
 .bodybg{
-    -fx-background-image:url('../images/fondo-de-pantalla-fondo-azul-5.jpg');
+    -fx-background-image:url('/sample/images/fondo-de-pantalla-fondo-azul-5.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
@@ -30,44 +30,44 @@
 }
 
 .modelobg{
-    -fx-background-image:url('../images/fondo_modelo.jpg');
+    -fx-background-image:url('/sample/images/fondo_modelo.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 
 .controlesbg{
-    -fx-background-image:url('../images/fondo_controles.jpg');
+    -fx-background-image:url('/sample/images/fondo_controles.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 .mallabg{
-    -fx-background-image:url('../images/textura_triagulos_azules.jpg');
+    -fx-background-image:url('/sample/images/textura_triagulos_azules.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 .malla2bg{
-    -fx-background-image:url('../images/fondo_hexagonos.jpg');
+    -fx-background-image:url('/sample/images/fondo_hexagonos.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 .condicionbg{
-    -fx-background-image:url('../images/hexagonos-3d-en-perspectiva-iluminacion-neon_3840x2160_xtrafondos.com.jpg');
+    -fx-background-image:url('/sample/images/fondocondicon.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 .ensamblajebg{
-    -fx-background-image:url('../images/fondo_dominio.jpg');
+    -fx-background-image:url('/sample/images/fondo_dominio.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
 }
 .matrixbg{
-    -fx-background-image:url('../images/abstract-cube-digital-art-5k-hc.jpg');
+    -fx-background-image:url('/sample/images/abstract-cube-digital-art-5k-hc.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
@@ -75,7 +75,7 @@
 /*+++++++++++++BACKGROUND MEF+++++++++++++++++*/
 
 .step1bg{
-    -fx-background-image:url('../images/binary.jpg');
+    -fx-background-image:url('/sample/images/binary.jpg');
     -fx-background-size: 100% 100%;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;

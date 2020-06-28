@@ -103,7 +103,7 @@ public class DominioController implements Initializable {
     private Node prepareDomain() {
 
         PhongMaterial material = new PhongMaterial();
-        material.setDiffuseMap(new Image(getClass().getResourceAsStream("../images/iron_material.jpg")));
+        material.setDiffuseMap(new Image(getClass().getResourceAsStream("/sample/images/iron_material.jpg")));
         Box box =  new Box(100,20,50);
         box.setMaterial(material);
         box.setMaterial(material);
@@ -118,7 +118,7 @@ public class DominioController implements Initializable {
     }
 
     private ImageView prepareImageView(){
-        Image image = new Image(getClass().getResourceAsStream("../images/fondo_cuadros.jpg"));
+        Image image = new Image(getClass().getResourceAsStream("/sample/images/fondo_cuadros.jpg"));
         ImageView imageView = new ImageView(image);
         imageView.setPreserveRatio(true);
         imageView.getTransforms().add(new Translate(-image.getWidth()/2,-image.getHeight()/2,1800));
@@ -127,10 +127,10 @@ public class DominioController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image imageAWSD = new Image(getClass().getResourceAsStream("../images/awsd.jpg"));
+        Image imageAWSD = new Image(getClass().getResourceAsStream("/sample/images/awsd.jpg"));
         imgAWSD.setImage(imageAWSD);
 
-        Image imageMouse = new Image(getClass().getResourceAsStream("../images/mouse.jpg"));
+        Image imageMouse = new Image(getClass().getResourceAsStream("/sample/images/mouse.jpg"));
         imgMouse.setImage(imageMouse);
 
     }
