@@ -53,7 +53,7 @@ public class EnsamblajeController implements Initializable {
         imgelto1.setImage(image2);
         Image image3 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/2.jpg"));
         imgglobal.setImage(image3);
-        Image image4 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/4.gif"));
+        Image image4 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/3.jpg"));
         imgensamblaje.setImage(image4);
         Image images = new Image(getClass().getResourceAsStream("/sample/images/scroll.jpg"));
         scroll.setImage(images);

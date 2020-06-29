@@ -447,7 +447,7 @@
                   </ScrollPane>
                </content>
             </Tab>
-            <Tab text="Matriz g ">
+            <Tab text="Matriz h ">
                <content>
                   <ScrollPane prefHeight="200.0" prefWidth="200.0">
                      <content>

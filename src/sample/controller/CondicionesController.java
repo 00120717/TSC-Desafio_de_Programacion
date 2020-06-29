@@ -62,9 +62,9 @@ public class CondicionesController implements Initializable {
         neu.setImage(image3);
         Image image4 = new Image(getClass().getResourceAsStream("/sample/images/dirichletCondicion.jpg"));
         dirich.setImage(image4);
-        Image image5 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/3.gif"));
+        Image image5 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/4.jpg"));
         condicion.setImage(image5);
-        Image image6 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/5.gif"));
+        Image image6 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/5.jpg"));
         condFinal.setImage(image6);
         Image images = new Image(getClass().getResourceAsStream("/sample/images/scroll.jpg"));
         scroll.setImage(images);
