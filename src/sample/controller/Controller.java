@@ -52,13 +52,14 @@ public class Controller{
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/view/mef.fxml"));
             Parent root = fxmlLoader.load();
+
             Stage stage = new Stage();
             stage.setResizable(false);
-            stage.setTitle("MEF");
+            stage.setTitle("Mef");
             stage.setScene(new Scene(root));
             stage.show();
         }catch (Exception e){
-            System.out.println("No se pudo abrir el FXML");
+            System.out.println("No se pudo abrir Modelo");
         }
         Stage stage = (Stage) btn_mef.getScene().getWindow();
         stage.close();
@@ -166,5 +167,4 @@ public class Controller{
         Stage stage = (Stage) btn_cerrar.getScene().getWindow();
         stage.close();
     }
-
 }

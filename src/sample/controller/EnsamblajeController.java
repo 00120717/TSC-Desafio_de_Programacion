@@ -35,7 +35,7 @@ public class EnsamblajeController implements Initializable {
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setResizable(false);
-            stage.setTitle("MEF");
+            stage.setTitle("Desafio de programacion");
             stage.setScene(new Scene(root));
             stage.show();
         }catch (Exception e){
@@ -47,11 +47,11 @@ public class EnsamblajeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image1 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/1.gif"));
+        Image image1 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/1.jpg"));
         imgtable.setImage(image1);
         Image image2 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/elemento1.jpg"));
         imgelto1.setImage(image2);
-        Image image3 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/2.gif"));
+        Image image3 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/2.jpg"));
         imgglobal.setImage(image3);
         Image image4 = new Image(getClass().getResourceAsStream("/sample/images/ensamblaje/4.gif"));
         imgensamblaje.setImage(image4);
