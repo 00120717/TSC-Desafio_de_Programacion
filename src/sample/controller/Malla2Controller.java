@@ -118,7 +118,7 @@ public class Malla2Controller implements Initializable{
         Image image = new Image(getClass().getResourceAsStream("/sample/images/fondo_malla_poligonal.jpg"));
         ImageView imageView = new ImageView(image);
         imageView.setPreserveRatio(true);
-        imageView.getTransforms().add(new Translate(-image.getWidth()/5,-image.getHeight()/5,1800));
+        imageView.getTransforms().add(new Translate(-image.getWidth()/2,-image.getHeight()/2,1800));
         return imageView;
     }
 
